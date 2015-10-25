@@ -23,6 +23,17 @@
 		503572461A05967A00E431CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5035723A1A05967A00E431CD /* main.m */; };
 		503C830E1A098A6900E78890 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503C830D1A098A6900E78890 /* CoreTelephony.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5053289719CDAA8B0064CE70 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5053289619CDAA8B0064CE70 /* MapKit.framework */; };
+		50628A6A1BDCF7B80041CB5A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 50628A691BDCF7B80041CB5A /* Reachability.m */; settings = {ASSET_TAGS = (); }; };
+		50628A751BDCF7F50041CB5A /* apple maps icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50628A6B1BDCF7F50041CB5A /* apple maps icon.png */; settings = {ASSET_TAGS = (); }; };
+		50628A761BDCF7F50041CB5A /* apple maps icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50628A6C1BDCF7F50041CB5A /* apple maps icon@2x.png */; settings = {ASSET_TAGS = (); }; };
+		50628A771BDCF7F50041CB5A /* apple maps icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50628A6D1BDCF7F50041CB5A /* apple maps icon@3x.png */; settings = {ASSET_TAGS = (); }; };
+		50628A781BDCF7F50041CB5A /* google search icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50628A6E1BDCF7F50041CB5A /* google search icon.png */; settings = {ASSET_TAGS = (); }; };
+		50628A791BDCF7F50041CB5A /* google search icon @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50628A6F1BDCF7F50041CB5A /* google search icon @2x.png */; settings = {ASSET_TAGS = (); }; };
+		50628A7A1BDCF7F50041CB5A /* google search icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50628A701BDCF7F50041CB5A /* google search icon@3x.png */; settings = {ASSET_TAGS = (); }; };
+		50628A7B1BDCF7F50041CB5A /* googleMapsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50628A711BDCF7F50041CB5A /* googleMapsIcon.png */; settings = {ASSET_TAGS = (); }; };
+		50628A7C1BDCF7F50041CB5A /* googleMapsIcon @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50628A721BDCF7F50041CB5A /* googleMapsIcon @2x.png */; settings = {ASSET_TAGS = (); }; };
+		50628A7D1BDCF7F50041CB5A /* googleMapsIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50628A731BDCF7F50041CB5A /* googleMapsIcon@3x.png */; settings = {ASSET_TAGS = (); }; };
+		50628A7E1BDCF7F50041CB5A /* wikipediaIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50628A741BDCF7F50041CB5A /* wikipediaIcon@3x.png */; settings = {ASSET_TAGS = (); }; };
 		5069644A1BCB0E4E0058D6C2 /* misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506964491BCB0E4E0058D6C2 /* misc.swift */; settings = {ASSET_TAGS = (); }; };
 		5082BEC11954FDF8001557DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5082BEC01954FDF8001557DD /* Foundation.framework */; };
 		5082BEC31954FDF8001557DD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5082BEC21954FDF8001557DD /* CoreGraphics.framework */; };
@@ -36,27 +47,15 @@
 		5082BEE41954FDF9001557DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5082BEC01954FDF8001557DD /* Foundation.framework */; };
 		5082BEE51954FDF9001557DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5082BEC41954FDF8001557DD /* UIKit.framework */; };
 		5082BEED1954FDF9001557DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5082BEEB1954FDF9001557DD /* InfoPlist.strings */; };
-		5082BEEF1954FDF9001557DD /* The_Other_Side_Of_The_WorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5082BEEE1954FDF9001557DD /* The_Other_Side_Of_The_WorldTests.m */; };
 		509DB5A119BC9B11001D1962 /* OWSteppedGeocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509DB5A019BC9B11001D1962 /* OWSteppedGeocoder.swift */; };
 		50A0F2031971C71F0067FD98 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A0F2021971C71F0067FD98 /* CoreLocation.framework */; };
 		50A116521A2806A200AB1FED /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 5035723D1A05967A00E431CD /* RegExCategories.m */; };
 		50A769151A05725A00ACC5AC /* custom share options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A769141A05725900ACC5AC /* custom share options.swift */; };
 		50A8C7311A0689E00007A296 /* wikipediaIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50A8C72F1A0689E00007A296 /* wikipediaIcon@2x.png */; };
 		50A8C7321A0689E00007A296 /* wikipediaIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50A8C7301A0689E00007A296 /* wikipediaIcon.png */; };
-		50A8C7351A0691810007A296 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A8C7341A0691810007A296 /* Reachability.m */; };
 		50A98614195741DA00867350 /* OWUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A98613195741DA00867350 /* OWUtilities.m */; };
 		50AFA9741A290F030096F3AC /* OWAutocompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AFA9731A290F030096F3AC /* OWAutocompleteView.swift */; };
 		50BB0C771BC9DF57004C6423 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BB0C751BC9DDE5004C6423 /* GoogleMaps.framework */; };
-		50BB0CA61BCA9AF4004C6423 /* apple maps icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0C9E1BCA9AF4004C6423 /* apple maps icon@3x.png */; settings = {ASSET_TAGS = (); }; };
-		50BB0CA71BCA9AF4004C6423 /* google search icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0C9F1BCA9AF4004C6423 /* google search icon.png */; settings = {ASSET_TAGS = (); }; };
-		50BB0CA81BCA9AF4004C6423 /* google search icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0CA01BCA9AF4004C6423 /* google search icon@2x.png */; settings = {ASSET_TAGS = (); }; };
-		50BB0CA91BCA9AF4004C6423 /* google search icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0CA11BCA9AF4004C6423 /* google search icon@3x.png */; settings = {ASSET_TAGS = (); }; };
-		50BB0CAA1BCA9AF4004C6423 /* googleMapsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0CA21BCA9AF4004C6423 /* googleMapsIcon.png */; settings = {ASSET_TAGS = (); }; };
-		50BB0CAB1BCA9AF4004C6423 /* googleMapsIcon @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0CA31BCA9AF4004C6423 /* googleMapsIcon @2x.png */; settings = {ASSET_TAGS = (); }; };
-		50BB0CAC1BCA9AF4004C6423 /* googleMapsIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0CA41BCA9AF4004C6423 /* googleMapsIcon@3x.png */; settings = {ASSET_TAGS = (); }; };
-		50BB0CAD1BCA9AF4004C6423 /* wikipediaIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0CA51BCA9AF4004C6423 /* wikipediaIcon@3x.png */; settings = {ASSET_TAGS = (); }; };
-		50BB0CB01BCA9B04004C6423 /* apple maps icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0CAE1BCA9B04004C6423 /* apple maps icon.png */; settings = {ASSET_TAGS = (); }; };
-		50BB0CB11BCA9B04004C6423 /* apple maps icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0CAF1BCA9B04004C6423 /* apple maps icon@2x.png */; settings = {ASSET_TAGS = (); }; };
 		50BB0CBB1BCA9BB5004C6423 /* locationIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0CB81BCA9BB5004C6423 /* locationIcon.png */; settings = {ASSET_TAGS = (); }; };
 		50BB0CBC1BCA9BB5004C6423 /* locationIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0CB91BCA9BB5004C6423 /* locationIcon@2x.png */; settings = {ASSET_TAGS = (); }; };
 		50BB0CBD1BCA9BB5004C6423 /* locationIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0CBA1BCA9BB5004C6423 /* locationIcon@3x.png */; settings = {ASSET_TAGS = (); }; };
@@ -141,6 +140,18 @@
 		503C830D1A098A6900E78890 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		5053289619CDAA8B0064CE70 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		505BBEB91A08352800F58498 /* OWAutocompleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OWAutocompleteViewController.swift; path = TRAutoComplete/OWAutocompleteViewController.swift; sourceTree = "<group>"; };
+		50628A681BDCF7B80041CB5A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "The Other Side Of The World/Reachability.h"; sourceTree = SOURCE_ROOT; };
+		50628A691BDCF7B80041CB5A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "The Other Side Of The World/Reachability.m"; sourceTree = SOURCE_ROOT; };
+		50628A6B1BDCF7F50041CB5A /* apple maps icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "apple maps icon.png"; path = "The Other Side Of The World/apple maps icon.png"; sourceTree = SOURCE_ROOT; };
+		50628A6C1BDCF7F50041CB5A /* apple maps icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "apple maps icon@2x.png"; path = "The Other Side Of The World/apple maps icon@2x.png"; sourceTree = SOURCE_ROOT; };
+		50628A6D1BDCF7F50041CB5A /* apple maps icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "apple maps icon@3x.png"; path = "The Other Side Of The World/apple maps icon@3x.png"; sourceTree = SOURCE_ROOT; };
+		50628A6E1BDCF7F50041CB5A /* google search icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "google search icon.png"; path = "The Other Side Of The World/google search icon.png"; sourceTree = SOURCE_ROOT; };
+		50628A6F1BDCF7F50041CB5A /* google search icon @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "google search icon @2x.png"; path = "The Other Side Of The World/google search icon @2x.png"; sourceTree = SOURCE_ROOT; };
+		50628A701BDCF7F50041CB5A /* google search icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "google search icon@3x.png"; path = "The Other Side Of The World/google search icon@3x.png"; sourceTree = SOURCE_ROOT; };
+		50628A711BDCF7F50041CB5A /* googleMapsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = googleMapsIcon.png; path = "The Other Side Of The World/googleMapsIcon.png"; sourceTree = SOURCE_ROOT; };
+		50628A721BDCF7F50041CB5A /* googleMapsIcon @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "googleMapsIcon @2x.png"; path = "The Other Side Of The World/googleMapsIcon @2x.png"; sourceTree = SOURCE_ROOT; };
+		50628A731BDCF7F50041CB5A /* googleMapsIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "googleMapsIcon@3x.png"; path = "The Other Side Of The World/googleMapsIcon@3x.png"; sourceTree = SOURCE_ROOT; };
+		50628A741BDCF7F50041CB5A /* wikipediaIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wikipediaIcon@3x.png"; path = "The Other Side Of The World/wikipediaIcon@3x.png"; sourceTree = SOURCE_ROOT; };
 		506964491BCB0E4E0058D6C2 /* misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = misc.swift; sourceTree = "<group>"; };
 		5082BEBD1954FDF8001557DD /* The Far Side.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Far Side.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5082BEC01954FDF8001557DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -156,29 +167,16 @@
 		5082BEE11954FDF9001557DD /* The Far SideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Far SideTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5082BEE21954FDF9001557DD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5082BEEC1954FDF9001557DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5082BEEE1954FDF9001557DD /* The_Other_Side_Of_The_WorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = The_Other_Side_Of_The_WorldTests.m; sourceTree = "<group>"; };
 		509D8EDC1A17F10500D33EDB /* Archives */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Archives; path = "../../Library/Developer/Xcode/DerivedData/The_Far_Side-herqobioaxbwyrdqmfdloyzpssec/Build/Products/Archives"; sourceTree = "<group>"; };
 		509DB5A019BC9B11001D1962 /* OWSteppedGeocoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OWSteppedGeocoder.swift; sourceTree = "<group>"; };
 		50A0F2021971C71F0067FD98 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		50A769141A05725900ACC5AC /* custom share options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "custom share options.swift"; sourceTree = "<group>"; };
 		50A8C72F1A0689E00007A296 /* wikipediaIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wikipediaIcon@2x.png"; path = "The Other Side Of The World/wikipediaIcon@2x.png"; sourceTree = SOURCE_ROOT; };
 		50A8C7301A0689E00007A296 /* wikipediaIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wikipediaIcon.png; path = "The Other Side Of The World/wikipediaIcon.png"; sourceTree = SOURCE_ROOT; };
-		50A8C7331A0691810007A296 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		50A8C7341A0691810007A296 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		50A98612195741DA00867350 /* OWUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWUtilities.h; sourceTree = "<group>"; };
 		50A98613195741DA00867350 /* OWUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWUtilities.m; sourceTree = "<group>"; usesTabs = 1; };
 		50AFA9731A290F030096F3AC /* OWAutocompleteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OWAutocompleteView.swift; sourceTree = "<group>"; };
 		50BB0C751BC9DDE5004C6423 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Pods/GoogleMaps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
-		50BB0C9E1BCA9AF4004C6423 /* apple maps icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple maps icon@3x.png"; sourceTree = "<group>"; };
-		50BB0C9F1BCA9AF4004C6423 /* google search icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "google search icon.png"; sourceTree = "<group>"; };
-		50BB0CA01BCA9AF4004C6423 /* google search icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "google search icon@2x.png"; sourceTree = "<group>"; };
-		50BB0CA11BCA9AF4004C6423 /* google search icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "google search icon@3x.png"; sourceTree = "<group>"; };
-		50BB0CA21BCA9AF4004C6423 /* googleMapsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = googleMapsIcon.png; sourceTree = "<group>"; };
-		50BB0CA31BCA9AF4004C6423 /* googleMapsIcon @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "googleMapsIcon @2x.png"; sourceTree = "<group>"; };
-		50BB0CA41BCA9AF4004C6423 /* googleMapsIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "googleMapsIcon@3x.png"; sourceTree = "<group>"; };
-		50BB0CA51BCA9AF4004C6423 /* wikipediaIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wikipediaIcon@3x.png"; sourceTree = "<group>"; };
-		50BB0CAE1BCA9B04004C6423 /* apple maps icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple maps icon.png"; sourceTree = "<group>"; };
-		50BB0CAF1BCA9B04004C6423 /* apple maps icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple maps icon@2x.png"; sourceTree = "<group>"; };
 		50BB0CB81BCA9BB5004C6423 /* locationIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = locationIcon.png; path = "The Other Side Of The World/locationIcon.png"; sourceTree = SOURCE_ROOT; };
 		50BB0CB91BCA9BB5004C6423 /* locationIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "locationIcon@2x.png"; path = "The Other Side Of The World/locationIcon@2x.png"; sourceTree = SOURCE_ROOT; };
 		50BB0CBA1BCA9BB5004C6423 /* locationIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "locationIcon@3x.png"; path = "The Other Side Of The World/locationIcon@3x.png"; sourceTree = SOURCE_ROOT; };
@@ -291,7 +289,6 @@
 			children = (
 				5082BEC61954FDF8001557DD /* The Far Side */,
 				5082BEE91954FDF9001557DD /* Supporting Files */,
-				5082BEE81954FDF9001557DD /* The Far SideTests */,
 				5082BEBF1954FDF8001557DD /* Frameworks */,
 				5082BEBE1954FDF8001557DD /* Products */,
 				509D8EDC1A17F10500D33EDB /* Archives */,
@@ -366,22 +363,13 @@
 			sourceTree = "<group>";
 			usesTabs = 1;
 		};
-		5082BEE81954FDF9001557DD /* The Far SideTests */ = {
-			isa = PBXGroup;
-			children = (
-				5082BEEE1954FDF9001557DD /* The_Other_Side_Of_The_WorldTests.m */,
-			);
-			name = "The Far SideTests";
-			path = "The Other Side Of The WorldTests";
-			sourceTree = "<group>";
-		};
 		5082BEE91954FDF9001557DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				5035723C1A05967A00E431CD /* RegExCategories.h */,
 				5035723D1A05967A00E431CD /* RegExCategories.m */,
-				50A8C7331A0691810007A296 /* Reachability.h */,
-				50A8C7341A0691810007A296 /* Reachability.m */,
+				50628A681BDCF7B80041CB5A /* Reachability.h */,
+				50628A691BDCF7B80041CB5A /* Reachability.m */,
 				50E9A4731BDC03780052776C /* launch icon iphone@3x.png */,
 				50E9A4741BDC03780052776C /* launch icon iphone@2x.png */,
 				50E9A4751BDC03780052776C /* launch icon iphone.png */,
@@ -390,16 +378,16 @@
 				50BB0CBA1BCA9BB5004C6423 /* locationIcon@3x.png */,
 				50BB0CB91BCA9BB5004C6423 /* locationIcon@2x.png */,
 				50BB0CB81BCA9BB5004C6423 /* locationIcon.png */,
-				50BB0C9E1BCA9AF4004C6423 /* apple maps icon@3x.png */,
-				50BB0CAF1BCA9B04004C6423 /* apple maps icon@2x.png */,
-				50BB0CAE1BCA9B04004C6423 /* apple maps icon.png */,
-				50BB0CA11BCA9AF4004C6423 /* google search icon@3x.png */,
-				50BB0CA01BCA9AF4004C6423 /* google search icon@2x.png */,
-				50BB0C9F1BCA9AF4004C6423 /* google search icon.png */,
-				50BB0CA41BCA9AF4004C6423 /* googleMapsIcon@3x.png */,
-				50BB0CA31BCA9AF4004C6423 /* googleMapsIcon @2x.png */,
-				50BB0CA21BCA9AF4004C6423 /* googleMapsIcon.png */,
-				50BB0CA51BCA9AF4004C6423 /* wikipediaIcon@3x.png */,
+				50628A6B1BDCF7F50041CB5A /* apple maps icon.png */,
+				50628A6C1BDCF7F50041CB5A /* apple maps icon@2x.png */,
+				50628A6D1BDCF7F50041CB5A /* apple maps icon@3x.png */,
+				50628A6E1BDCF7F50041CB5A /* google search icon.png */,
+				50628A6F1BDCF7F50041CB5A /* google search icon @2x.png */,
+				50628A701BDCF7F50041CB5A /* google search icon@3x.png */,
+				50628A711BDCF7F50041CB5A /* googleMapsIcon.png */,
+				50628A721BDCF7F50041CB5A /* googleMapsIcon @2x.png */,
+				50628A731BDCF7F50041CB5A /* googleMapsIcon@3x.png */,
+				50628A741BDCF7F50041CB5A /* wikipediaIcon@3x.png */,
 				50A8C72F1A0689E00007A296 /* wikipediaIcon@2x.png */,
 				50A8C7301A0689E00007A296 /* wikipediaIcon.png */,
 				503572321A05967A00E431CD /* The Far Side-Prefix.pch */,
@@ -523,32 +511,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50BB0CAD1BCA9AF4004C6423 /* wikipediaIcon@3x.png in Resources */,
 				50BB0CBC1BCA9BB5004C6423 /* locationIcon@2x.png in Resources */,
+				50628A7A1BDCF7F50041CB5A /* google search icon@3x.png in Resources */,
 				5082BED71954FDF8001557DD /* Main_iPad.storyboard in Resources */,
+				50628A7B1BDCF7F50041CB5A /* googleMapsIcon.png in Resources */,
+				50628A7C1BDCF7F50041CB5A /* googleMapsIcon @2x.png in Resources */,
+				50628A7D1BDCF7F50041CB5A /* googleMapsIcon@3x.png in Resources */,
 				5082BEDC1954FDF8001557DD /* Images.xcassets in Resources */,
 				50BB0CBB1BCA9BB5004C6423 /* locationIcon.png in Resources */,
-				50BB0CB11BCA9B04004C6423 /* apple maps icon@2x.png in Resources */,
 				50E9A4841BDC10280052776C /* Main.storyboard in Resources */,
 				50E9A4711BDBFC880052776C /* Launch Screen.storyboard in Resources */,
+				50628A771BDCF7F50041CB5A /* apple maps icon@3x.png in Resources */,
 				50A8C7311A0689E00007A296 /* wikipediaIcon@2x.png in Resources */,
-				50BB0CA91BCA9AF4004C6423 /* google search icon@3x.png in Resources */,
+				50628A761BDCF7F50041CB5A /* apple maps icon@2x.png in Resources */,
+				50628A781BDCF7F50041CB5A /* google search icon.png in Resources */,
 				50A8C7321A0689E00007A296 /* wikipediaIcon.png in Resources */,
 				50E9A4781BDC03790052776C /* launch icon ipad@2x.png in Resources */,
 				50E9A4791BDC03790052776C /* launch icon iphone@3x.png in Resources */,
-				50BB0CA61BCA9AF4004C6423 /* apple maps icon@3x.png in Resources */,
 				50E9A47A1BDC03790052776C /* launch icon iphone@2x.png in Resources */,
-				50BB0CAC1BCA9AF4004C6423 /* googleMapsIcon@3x.png in Resources */,
-				50BB0CA71BCA9AF4004C6423 /* google search icon.png in Resources */,
+				50628A791BDCF7F50041CB5A /* google search icon @2x.png in Resources */,
 				503572411A05967A00E431CD /* coords-database.json in Resources */,
 				50E9A47C1BDC03790052776C /* launch icon ipad.png in Resources */,
-				50BB0CAB1BCA9AF4004C6423 /* googleMapsIcon @2x.png in Resources */,
 				503572401A05967A00E431CD /* big map.png in Resources */,
 				5082BED41954FDF8001557DD /* Main_iPhone.storyboard in Resources */,
+				50628A751BDCF7F50041CB5A /* apple maps icon.png in Resources */,
 				50E9A47B1BDC03790052776C /* launch icon iphone.png in Resources */,
-				50BB0CA81BCA9AF4004C6423 /* google search icon@2x.png in Resources */,
-				50BB0CAA1BCA9AF4004C6423 /* googleMapsIcon.png in Resources */,
-				50BB0CB01BCA9B04004C6423 /* apple maps icon.png in Resources */,
+				50628A7E1BDCF7F50041CB5A /* wikipediaIcon@3x.png in Resources */,
 				50BB0CBD1BCA9BB5004C6423 /* locationIcon@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,9 +604,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50628A6A1BDCF7B80041CB5A /* Reachability.m in Sources */,
 				50A769151A05725A00ACC5AC /* custom share options.swift in Sources */,
 				5082BED11954FDF8001557DD /* OWAppDelegate.m in Sources */,
-				50A8C7351A0691810007A296 /* Reachability.m in Sources */,
 				509DB5A119BC9B11001D1962 /* OWSteppedGeocoder.swift in Sources */,
 				50A98614195741DA00867350 /* OWUtilities.m in Sources */,
 				50E8293C1A05B025009607AA /* OWMiscellaneousData.swift in Sources */,
@@ -635,7 +623,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5082BEEF1954FDF9001557DD /* The_Other_Side_Of_The_WorldTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
