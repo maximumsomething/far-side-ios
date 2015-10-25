@@ -5,4 +5,4 @@
   
   You can find the Android counterpart at https://play.google.com/store/apps/details?id=com.nothingness.thefarside
   
-  The working title was "The Other Side Of The World, so you may see that name appear occasionally.
+  The working title was "The Other Side Of The World", so you may see that name appear occasionally.
