@@ -1,0 +1,908 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		502E6DDA19CE1212002F358C /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 502E6DD919CE1212002F358C /* libc++.dylib */; };
+		502E6DDE19CE14C6002F358C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 502E6DDD19CE14C6002F358C /* AVFoundation.framework */; };
+		502E6DE019CE14E5002F358C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 502E6DDF19CE14E5002F358C /* CoreData.framework */; };
+		502E6DE219CE14F0002F358C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 502E6DE119CE14F0002F358C /* CoreText.framework */; };
+		502E6DE419CE150A002F358C /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 502E6DE319CE150A002F358C /* GLKit.framework */; };
+		502E6DE619CE1519002F358C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 502E6DE519CE1519002F358C /* ImageIO.framework */; };
+		502E6DE819CE153F002F358C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 502E6DE719CE153F002F358C /* libz.dylib */; };
+		502E6DEA19CE1552002F358C /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 502E6DE919CE1552002F358C /* libicucore.dylib */; };
+		502E6DEC19CE1567002F358C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 502E6DEB19CE1567002F358C /* OpenGLES.framework */; };
+		502E6DEE19CE1570002F358C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 502E6DED19CE1570002F358C /* QuartzCore.framework */; };
+		502E6DF019CE1586002F358C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 502E6DEF19CE1586002F358C /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		503572401A05967A00E431CD /* big map.png in Resources */ = {isa = PBXBuildFile; fileRef = 503572341A05967A00E431CD /* big map.png */; };
+		503572411A05967A00E431CD /* coords-database.json in Resources */ = {isa = PBXBuildFile; fileRef = 503572351A05967A00E431CD /* coords-database.json */; };
+		503572461A05967A00E431CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5035723A1A05967A00E431CD /* main.m */; };
+		503C830E1A098A6900E78890 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503C830D1A098A6900E78890 /* CoreTelephony.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		5053289719CDAA8B0064CE70 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5053289619CDAA8B0064CE70 /* MapKit.framework */; };
+		5069644A1BCB0E4E0058D6C2 /* misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506964491BCB0E4E0058D6C2 /* misc.swift */; settings = {ASSET_TAGS = (); }; };
+		5082BEC11954FDF8001557DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5082BEC01954FDF8001557DD /* Foundation.framework */; };
+		5082BEC31954FDF8001557DD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5082BEC21954FDF8001557DD /* CoreGraphics.framework */; };
+		5082BEC51954FDF8001557DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5082BEC41954FDF8001557DD /* UIKit.framework */; };
+		5082BED11954FDF8001557DD /* OWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5082BED01954FDF8001557DD /* OWAppDelegate.m */; };
+		5082BED41954FDF8001557DD /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5082BED21954FDF8001557DD /* Main_iPhone.storyboard */; };
+		5082BED71954FDF8001557DD /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5082BED51954FDF8001557DD /* Main_iPad.storyboard */; };
+		5082BEDA1954FDF8001557DD /* OWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5082BED91954FDF8001557DD /* OWViewController.m */; };
+		5082BEDC1954FDF8001557DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5082BEDB1954FDF8001557DD /* Images.xcassets */; };
+		5082BEE31954FDF9001557DD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5082BEE21954FDF9001557DD /* XCTest.framework */; };
+		5082BEE41954FDF9001557DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5082BEC01954FDF8001557DD /* Foundation.framework */; };
+		5082BEE51954FDF9001557DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5082BEC41954FDF8001557DD /* UIKit.framework */; };
+		5082BEED1954FDF9001557DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5082BEEB1954FDF9001557DD /* InfoPlist.strings */; };
+		5082BEEF1954FDF9001557DD /* The_Other_Side_Of_The_WorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5082BEEE1954FDF9001557DD /* The_Other_Side_Of_The_WorldTests.m */; };
+		509DB5A119BC9B11001D1962 /* OWSteppedGeocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509DB5A019BC9B11001D1962 /* OWSteppedGeocoder.swift */; };
+		50A0F2031971C71F0067FD98 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A0F2021971C71F0067FD98 /* CoreLocation.framework */; };
+		50A116521A2806A200AB1FED /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 5035723D1A05967A00E431CD /* RegExCategories.m */; };
+		50A769151A05725A00ACC5AC /* custom share options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A769141A05725900ACC5AC /* custom share options.swift */; };
+		50A8C7311A0689E00007A296 /* wikipediaIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50A8C72F1A0689E00007A296 /* wikipediaIcon@2x.png */; };
+		50A8C7321A0689E00007A296 /* wikipediaIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50A8C7301A0689E00007A296 /* wikipediaIcon.png */; };
+		50A8C7351A0691810007A296 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A8C7341A0691810007A296 /* Reachability.m */; };
+		50A98614195741DA00867350 /* OWUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A98613195741DA00867350 /* OWUtilities.m */; };
+		50AFA9741A290F030096F3AC /* OWAutocompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AFA9731A290F030096F3AC /* OWAutocompleteView.swift */; };
+		50BB0C771BC9DF57004C6423 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BB0C751BC9DDE5004C6423 /* GoogleMaps.framework */; };
+		50BB0CA61BCA9AF4004C6423 /* apple maps icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0C9E1BCA9AF4004C6423 /* apple maps icon@3x.png */; settings = {ASSET_TAGS = (); }; };
+		50BB0CA71BCA9AF4004C6423 /* google search icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0C9F1BCA9AF4004C6423 /* google search icon.png */; settings = {ASSET_TAGS = (); }; };
+		50BB0CA81BCA9AF4004C6423 /* google search icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0CA01BCA9AF4004C6423 /* google search icon@2x.png */; settings = {ASSET_TAGS = (); }; };
+		50BB0CA91BCA9AF4004C6423 /* google search icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0CA11BCA9AF4004C6423 /* google search icon@3x.png */; settings = {ASSET_TAGS = (); }; };
+		50BB0CAA1BCA9AF4004C6423 /* googleMapsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0CA21BCA9AF4004C6423 /* googleMapsIcon.png */; settings = {ASSET_TAGS = (); }; };
+		50BB0CAB1BCA9AF4004C6423 /* googleMapsIcon @2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0CA31BCA9AF4004C6423 /* googleMapsIcon @2x.png */; settings = {ASSET_TAGS = (); }; };
+		50BB0CAC1BCA9AF4004C6423 /* googleMapsIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0CA41BCA9AF4004C6423 /* googleMapsIcon@3x.png */; settings = {ASSET_TAGS = (); }; };
+		50BB0CAD1BCA9AF4004C6423 /* wikipediaIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0CA51BCA9AF4004C6423 /* wikipediaIcon@3x.png */; settings = {ASSET_TAGS = (); }; };
+		50BB0CB01BCA9B04004C6423 /* apple maps icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0CAE1BCA9B04004C6423 /* apple maps icon.png */; settings = {ASSET_TAGS = (); }; };
+		50BB0CB11BCA9B04004C6423 /* apple maps icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0CAF1BCA9B04004C6423 /* apple maps icon@2x.png */; settings = {ASSET_TAGS = (); }; };
+		50BB0CBB1BCA9BB5004C6423 /* locationIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0CB81BCA9BB5004C6423 /* locationIcon.png */; settings = {ASSET_TAGS = (); }; };
+		50BB0CBC1BCA9BB5004C6423 /* locationIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0CB91BCA9BB5004C6423 /* locationIcon@2x.png */; settings = {ASSET_TAGS = (); }; };
+		50BB0CBD1BCA9BB5004C6423 /* locationIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BB0CBA1BCA9BB5004C6423 /* locationIcon@3x.png */; settings = {ASSET_TAGS = (); }; };
+		50E8293C1A05B025009607AA /* OWMiscellaneousData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E8293B1A05B025009607AA /* OWMiscellaneousData.swift */; };
+		50E9A4711BDBFC880052776C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E9A4701BDBFC880052776C /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		50E9A4781BDC03790052776C /* launch icon ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E9A4721BDC03780052776C /* launch icon ipad@2x.png */; settings = {ASSET_TAGS = (); }; };
+		50E9A4791BDC03790052776C /* launch icon iphone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E9A4731BDC03780052776C /* launch icon iphone@3x.png */; settings = {ASSET_TAGS = (); }; };
+		50E9A47A1BDC03790052776C /* launch icon iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E9A4741BDC03780052776C /* launch icon iphone@2x.png */; settings = {ASSET_TAGS = (); }; };
+		50E9A47B1BDC03790052776C /* launch icon iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E9A4751BDC03780052776C /* launch icon iphone.png */; settings = {ASSET_TAGS = (); }; };
+		50E9A47C1BDC03790052776C /* launch icon ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E9A4761BDC03780052776C /* launch icon ipad.png */; settings = {ASSET_TAGS = (); }; };
+		50E9A4841BDC10280052776C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E9A4821BDC10280052776C /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		50FE8D13198BD643008078E5 /* otherSideFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FE8D12198BD643008078E5 /* otherSideFinder.swift */; };
+		D7388569284ECB7DCF365DFC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24462263F4BD8B4987EC3EEA /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5082BEE61954FDF9001557DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5082BEB51954FDF8001557DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5082BEBC1954FDF8001557DD;
+			remoteInfo = "The Other Side Of The World";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24462263F4BD8B4987EC3EEA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		501D66111A06E2340072A7B7 /* TRAutocompleteItemsSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAutocompleteItemsSource.h; sourceTree = "<group>"; };
+		501D66121A06E2340072A7B7 /* TRAutocompleteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAutocompleteView.h; sourceTree = "<group>"; };
+		501D66131A06E2340072A7B7 /* TRAutocompleteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRAutocompleteView.m; sourceTree = "<group>"; };
+		501D66141A06E2340072A7B7 /* TRAutocompletionCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAutocompletionCellFactory.h; sourceTree = "<group>"; };
+		501D66151A06E2340072A7B7 /* TRGoogleMapsAutocompleteItemsSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRGoogleMapsAutocompleteItemsSource.h; sourceTree = "<group>"; };
+		501D66161A06E2340072A7B7 /* TRGoogleMapsAutocompleteItemsSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRGoogleMapsAutocompleteItemsSource.m; sourceTree = "<group>"; };
+		501D66171A06E2340072A7B7 /* TRGoogleMapsAutocompletionCellFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRGoogleMapsAutocompletionCellFactory.h; sourceTree = "<group>"; };
+		501D66181A06E2340072A7B7 /* TRGoogleMapsAutocompletionCellFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRGoogleMapsAutocompletionCellFactory.m; sourceTree = "<group>"; };
+		501D66191A06E2340072A7B7 /* TRGoogleMapsSuggestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRGoogleMapsSuggestion.h; sourceTree = "<group>"; };
+		501D661A1A06E2340072A7B7 /* TRGoogleMapsSuggestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRGoogleMapsSuggestion.m; sourceTree = "<group>"; };
+		501D661B1A06E2340072A7B7 /* TRStringExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRStringExtensions.h; sourceTree = "<group>"; };
+		501D661C1A06E2340072A7B7 /* TRStringExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRStringExtensions.m; sourceTree = "<group>"; };
+		501D661D1A06E2340072A7B7 /* TRTextFieldExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTextFieldExtensions.h; sourceTree = "<group>"; };
+		501D661E1A06E2340072A7B7 /* TRTextFieldExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTextFieldExtensions.m; sourceTree = "<group>"; };
+		501D66261A06E44D0072A7B7 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		501D66271A06E44D0072A7B7 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		501D66281A06E44D0072A7B7 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		501D66291A06E44D0072A7B7 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		501D662A1A06E44D0072A7B7 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		501D662B1A06E44D0072A7B7 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		501D662C1A06E44D0072A7B7 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		501D662D1A06E44D0072A7B7 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		501D662E1A06E44D0072A7B7 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		501D662F1A06E44D0072A7B7 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		501D66301A06E44D0072A7B7 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		501D66311A06E44D0072A7B7 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		501D66321A06E44D0072A7B7 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		501D66331A06E44D0072A7B7 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		501D66341A06E44D0072A7B7 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		501D66351A06E44D0072A7B7 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		501D66361A06E44D0072A7B7 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		501D66371A06E44D0072A7B7 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		501D66381A06E44D0072A7B7 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		501D66421A06E6430072A7B7 /* TRAutocomplete.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRAutocomplete.h; sourceTree = "<group>"; };
+		502E6DD919CE1212002F358C /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		502E6DDD19CE14C6002F358C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		502E6DDF19CE14E5002F358C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		502E6DE119CE14F0002F358C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		502E6DE319CE150A002F358C /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		502E6DE519CE1519002F358C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		502E6DE719CE153F002F358C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		502E6DE919CE1552002F358C /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		502E6DEB19CE1567002F358C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		502E6DED19CE1570002F358C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		502E6DEF19CE1586002F358C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		503572321A05967A00E431CD /* The Far Side-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "The Far Side-Prefix.pch"; path = "The Other Side Of The World/The Far Side-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		503572341A05967A00E431CD /* big map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "big map.png"; path = "The Other Side Of The World/big map.png"; sourceTree = SOURCE_ROOT; };
+		503572351A05967A00E431CD /* coords-database.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "coords-database.json"; path = "The Other Side Of The World/coords-database.json"; sourceTree = SOURCE_ROOT; };
+		5035723A1A05967A00E431CD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "The Other Side Of The World/main.m"; sourceTree = SOURCE_ROOT; };
+		5035723C1A05967A00E431CD /* RegExCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegExCategories.h; path = "The Other Side Of The World/RegExCategories.h"; sourceTree = SOURCE_ROOT; };
+		5035723D1A05967A00E431CD /* RegExCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegExCategories.m; path = "The Other Side Of The World/RegExCategories.m"; sourceTree = SOURCE_ROOT; };
+		5035723E1A05967A00E431CD /* The Far Side-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "The Far Side-Info.plist"; path = "The Other Side Of The World/The Far Side-Info.plist"; sourceTree = SOURCE_ROOT; };
+		503C830A1A092B5500E78890 /* playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = playground.playground; sourceTree = "<group>"; };
+		503C830B1A09445200E78890 /* OWGoogleMapsDelegateToCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OWGoogleMapsDelegateToCallback.swift; sourceTree = "<group>"; };
+		503C830D1A098A6900E78890 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		5053289619CDAA8B0064CE70 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		505BBEB91A08352800F58498 /* OWAutocompleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OWAutocompleteViewController.swift; path = TRAutoComplete/OWAutocompleteViewController.swift; sourceTree = "<group>"; };
+		506964491BCB0E4E0058D6C2 /* misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = misc.swift; sourceTree = "<group>"; };
+		5082BEBD1954FDF8001557DD /* The Far Side.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Far Side.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5082BEC01954FDF8001557DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5082BEC21954FDF8001557DD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5082BEC41954FDF8001557DD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5082BECF1954FDF8001557DD /* OWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OWAppDelegate.h; sourceTree = "<group>"; };
+		5082BED01954FDF8001557DD /* OWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OWAppDelegate.m; sourceTree = "<group>"; };
+		5082BED31954FDF8001557DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		5082BED61954FDF8001557DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		5082BED81954FDF8001557DD /* OWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OWViewController.h; sourceTree = "<group>"; };
+		5082BED91954FDF8001557DD /* OWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OWViewController.m; sourceTree = "<group>"; usesTabs = 1; };
+		5082BEDB1954FDF8001557DD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5082BEE11954FDF9001557DD /* The Far SideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Far SideTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5082BEE21954FDF9001557DD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5082BEEC1954FDF9001557DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5082BEEE1954FDF9001557DD /* The_Other_Side_Of_The_WorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = The_Other_Side_Of_The_WorldTests.m; sourceTree = "<group>"; };
+		509D8EDC1A17F10500D33EDB /* Archives */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Archives; path = "../../Library/Developer/Xcode/DerivedData/The_Far_Side-herqobioaxbwyrdqmfdloyzpssec/Build/Products/Archives"; sourceTree = "<group>"; };
+		509DB5A019BC9B11001D1962 /* OWSteppedGeocoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OWSteppedGeocoder.swift; sourceTree = "<group>"; };
+		50A0F2021971C71F0067FD98 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		50A769141A05725900ACC5AC /* custom share options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "custom share options.swift"; sourceTree = "<group>"; };
+		50A8C72F1A0689E00007A296 /* wikipediaIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wikipediaIcon@2x.png"; path = "The Other Side Of The World/wikipediaIcon@2x.png"; sourceTree = SOURCE_ROOT; };
+		50A8C7301A0689E00007A296 /* wikipediaIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wikipediaIcon.png; path = "The Other Side Of The World/wikipediaIcon.png"; sourceTree = SOURCE_ROOT; };
+		50A8C7331A0691810007A296 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		50A8C7341A0691810007A296 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		50A98612195741DA00867350 /* OWUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWUtilities.h; sourceTree = "<group>"; };
+		50A98613195741DA00867350 /* OWUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWUtilities.m; sourceTree = "<group>"; usesTabs = 1; };
+		50AFA9731A290F030096F3AC /* OWAutocompleteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OWAutocompleteView.swift; sourceTree = "<group>"; };
+		50BB0C751BC9DDE5004C6423 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Pods/GoogleMaps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		50BB0C9E1BCA9AF4004C6423 /* apple maps icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple maps icon@3x.png"; sourceTree = "<group>"; };
+		50BB0C9F1BCA9AF4004C6423 /* google search icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "google search icon.png"; sourceTree = "<group>"; };
+		50BB0CA01BCA9AF4004C6423 /* google search icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "google search icon@2x.png"; sourceTree = "<group>"; };
+		50BB0CA11BCA9AF4004C6423 /* google search icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "google search icon@3x.png"; sourceTree = "<group>"; };
+		50BB0CA21BCA9AF4004C6423 /* googleMapsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = googleMapsIcon.png; sourceTree = "<group>"; };
+		50BB0CA31BCA9AF4004C6423 /* googleMapsIcon @2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "googleMapsIcon @2x.png"; sourceTree = "<group>"; };
+		50BB0CA41BCA9AF4004C6423 /* googleMapsIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "googleMapsIcon@3x.png"; sourceTree = "<group>"; };
+		50BB0CA51BCA9AF4004C6423 /* wikipediaIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wikipediaIcon@3x.png"; sourceTree = "<group>"; };
+		50BB0CAE1BCA9B04004C6423 /* apple maps icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple maps icon.png"; sourceTree = "<group>"; };
+		50BB0CAF1BCA9B04004C6423 /* apple maps icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple maps icon@2x.png"; sourceTree = "<group>"; };
+		50BB0CB81BCA9BB5004C6423 /* locationIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = locationIcon.png; path = "The Other Side Of The World/locationIcon.png"; sourceTree = SOURCE_ROOT; };
+		50BB0CB91BCA9BB5004C6423 /* locationIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "locationIcon@2x.png"; path = "The Other Side Of The World/locationIcon@2x.png"; sourceTree = SOURCE_ROOT; };
+		50BB0CBA1BCA9BB5004C6423 /* locationIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "locationIcon@3x.png"; path = "The Other Side Of The World/locationIcon@3x.png"; sourceTree = SOURCE_ROOT; };
+		50E8293B1A05B025009607AA /* OWMiscellaneousData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OWMiscellaneousData.swift; sourceTree = "<group>"; };
+		50E9A4701BDBFC880052776C /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		50E9A4721BDC03780052776C /* launch icon ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "launch icon ipad@2x.png"; path = "The Other Side Of The World/launch icon ipad@2x.png"; sourceTree = SOURCE_ROOT; };
+		50E9A4731BDC03780052776C /* launch icon iphone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "launch icon iphone@3x.png"; path = "The Other Side Of The World/launch icon iphone@3x.png"; sourceTree = SOURCE_ROOT; };
+		50E9A4741BDC03780052776C /* launch icon iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "launch icon iphone@2x.png"; path = "The Other Side Of The World/launch icon iphone@2x.png"; sourceTree = SOURCE_ROOT; };
+		50E9A4751BDC03780052776C /* launch icon iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "launch icon iphone.png"; path = "The Other Side Of The World/launch icon iphone.png"; sourceTree = SOURCE_ROOT; };
+		50E9A4761BDC03780052776C /* launch icon ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "launch icon ipad.png"; path = "The Other Side Of The World/launch icon ipad.png"; sourceTree = SOURCE_ROOT; };
+		50E9A4831BDC10280052776C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50FE8D11198BD642008078E5 /* The Other Side Of The World-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "The Other Side Of The World-Bridging-Header.h"; sourceTree = "<group>"; };
+		50FE8D12198BD643008078E5 /* otherSideFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = otherSideFinder.swift; sourceTree = "<group>"; usesTabs = 1; };
+		68860B61CE43C2984DAB2E1F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FD47D0147CD23585E78FECFD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5082BEBA1954FDF8001557DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503C830E1A098A6900E78890 /* CoreTelephony.framework in Frameworks */,
+				502E6DF019CE1586002F358C /* SystemConfiguration.framework in Frameworks */,
+				502E6DEE19CE1570002F358C /* QuartzCore.framework in Frameworks */,
+				502E6DEC19CE1567002F358C /* OpenGLES.framework in Frameworks */,
+				502E6DEA19CE1552002F358C /* libicucore.dylib in Frameworks */,
+				502E6DE819CE153F002F358C /* libz.dylib in Frameworks */,
+				502E6DE619CE1519002F358C /* ImageIO.framework in Frameworks */,
+				502E6DE419CE150A002F358C /* GLKit.framework in Frameworks */,
+				502E6DE219CE14F0002F358C /* CoreText.framework in Frameworks */,
+				502E6DE019CE14E5002F358C /* CoreData.framework in Frameworks */,
+				502E6DDE19CE14C6002F358C /* AVFoundation.framework in Frameworks */,
+				502E6DDA19CE1212002F358C /* libc++.dylib in Frameworks */,
+				5053289719CDAA8B0064CE70 /* MapKit.framework in Frameworks */,
+				50A0F2031971C71F0067FD98 /* CoreLocation.framework in Frameworks */,
+				5082BEC31954FDF8001557DD /* CoreGraphics.framework in Frameworks */,
+				5082BEC51954FDF8001557DD /* UIKit.framework in Frameworks */,
+				5082BEC11954FDF8001557DD /* Foundation.framework in Frameworks */,
+				50BB0C771BC9DF57004C6423 /* GoogleMaps.framework in Frameworks */,
+				D7388569284ECB7DCF365DFC /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5082BEDE1954FDF9001557DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5082BEE31954FDF9001557DD /* XCTest.framework in Frameworks */,
+				5082BEE51954FDF9001557DD /* UIKit.framework in Frameworks */,
+				5082BEE41954FDF9001557DD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		501D66101A06E2340072A7B7 /* TRAutoComplete */ = {
+			isa = PBXGroup;
+			children = (
+				501D66111A06E2340072A7B7 /* TRAutocompleteItemsSource.h */,
+				501D66121A06E2340072A7B7 /* TRAutocompleteView.h */,
+				501D66131A06E2340072A7B7 /* TRAutocompleteView.m */,
+				501D66141A06E2340072A7B7 /* TRAutocompletionCellFactory.h */,
+				501D66151A06E2340072A7B7 /* TRGoogleMapsAutocompleteItemsSource.h */,
+				501D66161A06E2340072A7B7 /* TRGoogleMapsAutocompleteItemsSource.m */,
+				501D66171A06E2340072A7B7 /* TRGoogleMapsAutocompletionCellFactory.h */,
+				501D66181A06E2340072A7B7 /* TRGoogleMapsAutocompletionCellFactory.m */,
+				501D66191A06E2340072A7B7 /* TRGoogleMapsSuggestion.h */,
+				501D661A1A06E2340072A7B7 /* TRGoogleMapsSuggestion.m */,
+				501D661B1A06E2340072A7B7 /* TRStringExtensions.h */,
+				501D661C1A06E2340072A7B7 /* TRStringExtensions.m */,
+				501D661D1A06E2340072A7B7 /* TRTextFieldExtensions.h */,
+				501D661E1A06E2340072A7B7 /* TRTextFieldExtensions.m */,
+				501D66421A06E6430072A7B7 /* TRAutocomplete.h */,
+				501D66251A06E44D0072A7B7 /* AFNetworking */,
+			);
+			name = TRAutoComplete;
+			path = "The Other Side Of The World/TRAutoComplete";
+			sourceTree = SOURCE_ROOT;
+		};
+		501D66251A06E44D0072A7B7 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				501D66261A06E44D0072A7B7 /* AFHTTPRequestOperation.h */,
+				501D66271A06E44D0072A7B7 /* AFHTTPRequestOperation.m */,
+				501D66281A06E44D0072A7B7 /* AFHTTPRequestOperationManager.h */,
+				501D66291A06E44D0072A7B7 /* AFHTTPRequestOperationManager.m */,
+				501D662A1A06E44D0072A7B7 /* AFHTTPSessionManager.h */,
+				501D662B1A06E44D0072A7B7 /* AFHTTPSessionManager.m */,
+				501D662C1A06E44D0072A7B7 /* AFNetworking.h */,
+				501D662D1A06E44D0072A7B7 /* AFNetworkReachabilityManager.h */,
+				501D662E1A06E44D0072A7B7 /* AFNetworkReachabilityManager.m */,
+				501D662F1A06E44D0072A7B7 /* AFSecurityPolicy.h */,
+				501D66301A06E44D0072A7B7 /* AFSecurityPolicy.m */,
+				501D66311A06E44D0072A7B7 /* AFURLConnectionOperation.h */,
+				501D66321A06E44D0072A7B7 /* AFURLConnectionOperation.m */,
+				501D66331A06E44D0072A7B7 /* AFURLRequestSerialization.h */,
+				501D66341A06E44D0072A7B7 /* AFURLRequestSerialization.m */,
+				501D66351A06E44D0072A7B7 /* AFURLResponseSerialization.h */,
+				501D66361A06E44D0072A7B7 /* AFURLResponseSerialization.m */,
+				501D66371A06E44D0072A7B7 /* AFURLSessionManager.h */,
+				501D66381A06E44D0072A7B7 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		5082BEB41954FDF7001557DD = {
+			isa = PBXGroup;
+			children = (
+				5082BEC61954FDF8001557DD /* The Far Side */,
+				5082BEE91954FDF9001557DD /* Supporting Files */,
+				5082BEE81954FDF9001557DD /* The Far SideTests */,
+				5082BEBF1954FDF8001557DD /* Frameworks */,
+				5082BEBE1954FDF8001557DD /* Products */,
+				509D8EDC1A17F10500D33EDB /* Archives */,
+				509D8ED91A16CFC900D33EDB /* not being used */,
+				943B1B4B5C6A01DE5193C920 /* Pods */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 1;
+		};
+		5082BEBE1954FDF8001557DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5082BEBD1954FDF8001557DD /* The Far Side.app */,
+				5082BEE11954FDF9001557DD /* The Far SideTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5082BEBF1954FDF8001557DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50BB0C751BC9DDE5004C6423 /* GoogleMaps.framework */,
+				503C830D1A098A6900E78890 /* CoreTelephony.framework */,
+				502E6DEF19CE1586002F358C /* SystemConfiguration.framework */,
+				502E6DED19CE1570002F358C /* QuartzCore.framework */,
+				502E6DEB19CE1567002F358C /* OpenGLES.framework */,
+				502E6DE919CE1552002F358C /* libicucore.dylib */,
+				502E6DE719CE153F002F358C /* libz.dylib */,
+				502E6DE519CE1519002F358C /* ImageIO.framework */,
+				502E6DE319CE150A002F358C /* GLKit.framework */,
+				502E6DE119CE14F0002F358C /* CoreText.framework */,
+				502E6DDF19CE14E5002F358C /* CoreData.framework */,
+				502E6DDD19CE14C6002F358C /* AVFoundation.framework */,
+				502E6DD919CE1212002F358C /* libc++.dylib */,
+				5053289619CDAA8B0064CE70 /* MapKit.framework */,
+				50A0F2021971C71F0067FD98 /* CoreLocation.framework */,
+				5082BEC01954FDF8001557DD /* Foundation.framework */,
+				5082BEC21954FDF8001557DD /* CoreGraphics.framework */,
+				5082BEC41954FDF8001557DD /* UIKit.framework */,
+				5082BEE21954FDF9001557DD /* XCTest.framework */,
+				24462263F4BD8B4987EC3EEA /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5082BEC61954FDF8001557DD /* The Far Side */ = {
+			isa = PBXGroup;
+			children = (
+				5082BECF1954FDF8001557DD /* OWAppDelegate.h */,
+				5082BED01954FDF8001557DD /* OWAppDelegate.m */,
+				50E8293B1A05B025009607AA /* OWMiscellaneousData.swift */,
+				506964491BCB0E4E0058D6C2 /* misc.swift */,
+				5082BED21954FDF8001557DD /* Main_iPhone.storyboard */,
+				5082BED51954FDF8001557DD /* Main_iPad.storyboard */,
+				50E9A4821BDC10280052776C /* Main.storyboard */,
+				50E9A4701BDBFC880052776C /* Launch Screen.storyboard */,
+				5082BED81954FDF8001557DD /* OWViewController.h */,
+				5082BED91954FDF8001557DD /* OWViewController.m */,
+				50AFA9731A290F030096F3AC /* OWAutocompleteView.swift */,
+				50A769141A05725900ACC5AC /* custom share options.swift */,
+				509DB5A019BC9B11001D1962 /* OWSteppedGeocoder.swift */,
+				50A98612195741DA00867350 /* OWUtilities.h */,
+				50A98613195741DA00867350 /* OWUtilities.m */,
+				50FE8D12198BD643008078E5 /* otherSideFinder.swift */,
+				50FE8D11198BD642008078E5 /* The Other Side Of The World-Bridging-Header.h */,
+				503C830A1A092B5500E78890 /* playground.playground */,
+				5082BEDB1954FDF8001557DD /* Images.xcassets */,
+				5035723E1A05967A00E431CD /* The Far Side-Info.plist */,
+			);
+			name = "The Far Side";
+			path = "The Other Side Of The World";
+			sourceTree = "<group>";
+			usesTabs = 1;
+		};
+		5082BEE81954FDF9001557DD /* The Far SideTests */ = {
+			isa = PBXGroup;
+			children = (
+				5082BEEE1954FDF9001557DD /* The_Other_Side_Of_The_WorldTests.m */,
+			);
+			name = "The Far SideTests";
+			path = "The Other Side Of The WorldTests";
+			sourceTree = "<group>";
+		};
+		5082BEE91954FDF9001557DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5035723C1A05967A00E431CD /* RegExCategories.h */,
+				5035723D1A05967A00E431CD /* RegExCategories.m */,
+				50A8C7331A0691810007A296 /* Reachability.h */,
+				50A8C7341A0691810007A296 /* Reachability.m */,
+				50E9A4731BDC03780052776C /* launch icon iphone@3x.png */,
+				50E9A4741BDC03780052776C /* launch icon iphone@2x.png */,
+				50E9A4751BDC03780052776C /* launch icon iphone.png */,
+				50E9A4721BDC03780052776C /* launch icon ipad@2x.png */,
+				50E9A4761BDC03780052776C /* launch icon ipad.png */,
+				50BB0CBA1BCA9BB5004C6423 /* locationIcon@3x.png */,
+				50BB0CB91BCA9BB5004C6423 /* locationIcon@2x.png */,
+				50BB0CB81BCA9BB5004C6423 /* locationIcon.png */,
+				50BB0C9E1BCA9AF4004C6423 /* apple maps icon@3x.png */,
+				50BB0CAF1BCA9B04004C6423 /* apple maps icon@2x.png */,
+				50BB0CAE1BCA9B04004C6423 /* apple maps icon.png */,
+				50BB0CA11BCA9AF4004C6423 /* google search icon@3x.png */,
+				50BB0CA01BCA9AF4004C6423 /* google search icon@2x.png */,
+				50BB0C9F1BCA9AF4004C6423 /* google search icon.png */,
+				50BB0CA41BCA9AF4004C6423 /* googleMapsIcon@3x.png */,
+				50BB0CA31BCA9AF4004C6423 /* googleMapsIcon @2x.png */,
+				50BB0CA21BCA9AF4004C6423 /* googleMapsIcon.png */,
+				50BB0CA51BCA9AF4004C6423 /* wikipediaIcon@3x.png */,
+				50A8C72F1A0689E00007A296 /* wikipediaIcon@2x.png */,
+				50A8C7301A0689E00007A296 /* wikipediaIcon.png */,
+				503572321A05967A00E431CD /* The Far Side-Prefix.pch */,
+				503572341A05967A00E431CD /* big map.png */,
+				503572351A05967A00E431CD /* coords-database.json */,
+				5035723A1A05967A00E431CD /* main.m */,
+				5082BEEB1954FDF9001557DD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			path = "The Other Side Of The WorldTests";
+			sourceTree = SOURCE_ROOT;
+			usesTabs = 1;
+		};
+		509D8ED91A16CFC900D33EDB /* not being used */ = {
+			isa = PBXGroup;
+			children = (
+				501D66101A06E2340072A7B7 /* TRAutoComplete */,
+				505BBEB91A08352800F58498 /* OWAutocompleteViewController.swift */,
+				503C830B1A09445200E78890 /* OWGoogleMapsDelegateToCallback.swift */,
+			);
+			name = "not being used";
+			path = "The Other Side Of The World";
+			sourceTree = "<group>";
+		};
+		943B1B4B5C6A01DE5193C920 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD47D0147CD23585E78FECFD /* Pods.debug.xcconfig */,
+				68860B61CE43C2984DAB2E1F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5082BEBC1954FDF8001557DD /* The Far Side */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5082BEF21954FDF9001557DD /* Build configuration list for PBXNativeTarget "The Far Side" */;
+			buildPhases = (
+				91EF16FCB451690B167F7595 /* Check Pods Manifest.lock */,
+				5082BEB91954FDF8001557DD /* Sources */,
+				5082BEBA1954FDF8001557DD /* Frameworks */,
+				5082BEBB1954FDF8001557DD /* Resources */,
+				A8FB3514646FD9E88AD9F7B8 /* Copy Pods Resources */,
+				F08FE769A4E5EBB6B63C6785 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Far Side";
+			productName = "The Other Side Of The World";
+			productReference = 5082BEBD1954FDF8001557DD /* The Far Side.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5082BEE01954FDF9001557DD /* The Far SideTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5082BEF51954FDF9001557DD /* Build configuration list for PBXNativeTarget "The Far SideTests" */;
+			buildPhases = (
+				5082BEDD1954FDF9001557DD /* Sources */,
+				5082BEDE1954FDF9001557DD /* Frameworks */,
+				5082BEDF1954FDF9001557DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5082BEE71954FDF9001557DD /* PBXTargetDependency */,
+			);
+			name = "The Far SideTests";
+			productName = "The Other Side Of The WorldTests";
+			productReference = 5082BEE11954FDF9001557DD /* The Far SideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5082BEB51954FDF8001557DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OW;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "The Company";
+				TargetAttributes = {
+					5082BEBC1954FDF8001557DD = {
+						DevelopmentTeam = 9B6W7YLRF2;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					5082BEE01954FDF9001557DD = {
+						TestTargetID = 5082BEBC1954FDF8001557DD;
+					};
+				};
+			};
+			buildConfigurationList = 5082BEB81954FDF8001557DD /* Build configuration list for PBXProject "The Far Side" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5082BEB41954FDF7001557DD;
+			productRefGroup = 5082BEBE1954FDF8001557DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5082BEBC1954FDF8001557DD /* The Far Side */,
+				5082BEE01954FDF9001557DD /* The Far SideTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5082BEBB1954FDF8001557DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50BB0CAD1BCA9AF4004C6423 /* wikipediaIcon@3x.png in Resources */,
+				50BB0CBC1BCA9BB5004C6423 /* locationIcon@2x.png in Resources */,
+				5082BED71954FDF8001557DD /* Main_iPad.storyboard in Resources */,
+				5082BEDC1954FDF8001557DD /* Images.xcassets in Resources */,
+				50BB0CBB1BCA9BB5004C6423 /* locationIcon.png in Resources */,
+				50BB0CB11BCA9B04004C6423 /* apple maps icon@2x.png in Resources */,
+				50E9A4841BDC10280052776C /* Main.storyboard in Resources */,
+				50E9A4711BDBFC880052776C /* Launch Screen.storyboard in Resources */,
+				50A8C7311A0689E00007A296 /* wikipediaIcon@2x.png in Resources */,
+				50BB0CA91BCA9AF4004C6423 /* google search icon@3x.png in Resources */,
+				50A8C7321A0689E00007A296 /* wikipediaIcon.png in Resources */,
+				50E9A4781BDC03790052776C /* launch icon ipad@2x.png in Resources */,
+				50E9A4791BDC03790052776C /* launch icon iphone@3x.png in Resources */,
+				50BB0CA61BCA9AF4004C6423 /* apple maps icon@3x.png in Resources */,
+				50E9A47A1BDC03790052776C /* launch icon iphone@2x.png in Resources */,
+				50BB0CAC1BCA9AF4004C6423 /* googleMapsIcon@3x.png in Resources */,
+				50BB0CA71BCA9AF4004C6423 /* google search icon.png in Resources */,
+				503572411A05967A00E431CD /* coords-database.json in Resources */,
+				50E9A47C1BDC03790052776C /* launch icon ipad.png in Resources */,
+				50BB0CAB1BCA9AF4004C6423 /* googleMapsIcon @2x.png in Resources */,
+				503572401A05967A00E431CD /* big map.png in Resources */,
+				5082BED41954FDF8001557DD /* Main_iPhone.storyboard in Resources */,
+				50E9A47B1BDC03790052776C /* launch icon iphone.png in Resources */,
+				50BB0CA81BCA9AF4004C6423 /* google search icon@2x.png in Resources */,
+				50BB0CAA1BCA9AF4004C6423 /* googleMapsIcon.png in Resources */,
+				50BB0CB01BCA9B04004C6423 /* apple maps icon.png in Resources */,
+				50BB0CBD1BCA9BB5004C6423 /* locationIcon@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5082BEDF1954FDF9001557DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5082BEED1954FDF9001557DD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91EF16FCB451690B167F7595 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A8FB3514646FD9E88AD9F7B8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F08FE769A4E5EBB6B63C6785 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5082BEB91954FDF8001557DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50A769151A05725A00ACC5AC /* custom share options.swift in Sources */,
+				5082BED11954FDF8001557DD /* OWAppDelegate.m in Sources */,
+				50A8C7351A0691810007A296 /* Reachability.m in Sources */,
+				509DB5A119BC9B11001D1962 /* OWSteppedGeocoder.swift in Sources */,
+				50A98614195741DA00867350 /* OWUtilities.m in Sources */,
+				50E8293C1A05B025009607AA /* OWMiscellaneousData.swift in Sources */,
+				50FE8D13198BD643008078E5 /* otherSideFinder.swift in Sources */,
+				503572461A05967A00E431CD /* main.m in Sources */,
+				5082BEDA1954FDF8001557DD /* OWViewController.m in Sources */,
+				5069644A1BCB0E4E0058D6C2 /* misc.swift in Sources */,
+				50A116521A2806A200AB1FED /* RegExCategories.m in Sources */,
+				50AFA9741A290F030096F3AC /* OWAutocompleteView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5082BEDD1954FDF9001557DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5082BEEF1954FDF9001557DD /* The_Other_Side_Of_The_WorldTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5082BEE71954FDF9001557DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5082BEBC1954FDF8001557DD /* The Far Side */;
+			targetProxy = 5082BEE61954FDF9001557DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5082BED21954FDF8001557DD /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5082BED31954FDF8001557DD /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		5082BED51954FDF8001557DD /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5082BED61954FDF8001557DD /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		5082BEEB1954FDF9001557DD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5082BEEC1954FDF9001557DD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		50E9A4821BDC10280052776C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50E9A4831BDC10280052776C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5082BEF01954FDF9001557DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_MODULE_NAME = TheFarSide;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5082BEF11954FDF9001557DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_MODULE_NAME = TheFarSide;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5082BEF31954FDF9001557DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD47D0147CD23585E78FECFD /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Max/Downloads/GoogleMaps-iOS-1.8.1",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "The Other Side Of The World/The Far Side-Prefix.pch";
+				INFOPLIST_FILE = "The Other Side Of The World/The Far Side-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DDEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nothingness.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "The Far Side";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "The Other Side Of The World/The Other Side Of The World-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5082BEF41954FDF9001557DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68860B61CE43C2984DAB2E1F /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Max/Downloads/GoogleMaps-iOS-1.8.1",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "The Other Side Of The World/The Far Side-Prefix.pch";
+				INFOPLIST_FILE = "The Other Side Of The World/The Far Side-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nothingness.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "The Far Side";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "The Other Side Of The World/The Other Side Of The World-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5082BEF61954FDF9001557DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/The Other Side Of The World.app/The Other Side Of The World";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "The Other Side Of The World/The Other Side Of The World-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "The Other Side Of The WorldTests/The Far SideTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.company.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "The Far SideTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5082BEF71954FDF9001557DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/The Other Side Of The World.app/The Other Side Of The World";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "The Other Side Of The World/The Other Side Of The World-Prefix.pch";
+				INFOPLIST_FILE = "The Other Side Of The WorldTests/The Far SideTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.company.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "The Far SideTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5082BEB81954FDF8001557DD /* Build configuration list for PBXProject "The Far Side" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5082BEF01954FDF9001557DD /* Debug */,
+				5082BEF11954FDF9001557DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5082BEF21954FDF9001557DD /* Build configuration list for PBXNativeTarget "The Far Side" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5082BEF31954FDF9001557DD /* Debug */,
+				5082BEF41954FDF9001557DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5082BEF51954FDF9001557DD /* Build configuration list for PBXNativeTarget "The Far SideTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5082BEF61954FDF9001557DD /* Debug */,
+				5082BEF71954FDF9001557DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5082BEB51954FDF8001557DD /* Project object */;
+}

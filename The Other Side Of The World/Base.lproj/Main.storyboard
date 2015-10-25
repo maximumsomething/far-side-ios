@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="OWViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kN6-qM-xaX"/>
+                        <viewControllerLayoutGuide type="bottom" id="5fS-0I-BpO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MWe-rW-B4O">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTX-tV-0we">
+                                <rect key="frame" x="0.0" y="44" width="600" height="936"/>
+                                <animations/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissKeyboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ffE-tM-lQt"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dn5-cJ-SwY" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vr7-dg-MEv">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem id="O9a-jQ-LeD">
+                                        <nil key="title"/>
+                                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a place" minimumFontSize="17" clearButtonMode="always" id="EfX-Nt-Nc9">
+                                            <rect key="frame" x="172" y="7" width="257" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                                        </textField>
+                                        <barButtonItem key="rightBarButtonItem" image="locationIcon.png" id="znS-nU-I5C">
+                                            <connections>
+                                                <action selector="loadLocation:" destination="BYZ-38-t0r" id="W5k-lO-Jjp"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebC-0f-oSc">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Ipo-2C-TZB"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem enabled="NO" systemItem="stop" id="htz-sY-lID">
+                                        <connections>
+                                            <action selector="stop:" destination="BYZ-38-t0r" id="wtf-d0-USQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="CF3-UG-YUx"/>
+                                    <barButtonItem style="plain" id="pfW-UC-3mH">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Bmr-qC-Yef">
+                                            <rect key="frame" x="238" y="7" width="123" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <segments>
+                                                <segment title="Map"/>
+                                                <segment title="Satellite"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="changeMapType:" destination="BYZ-38-t0r" eventType="valueChanged" id="4wQ-jM-GS0"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="d5P-Ag-IkU"/>
+                                    <barButtonItem enabled="NO" style="plain" systemItem="action" id="QAs-1o-55v">
+                                        <connections>
+                                            <action selector="share:" destination="BYZ-38-t0r" id="lBn-zp-voT"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You must be connected to the internet" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jcc-FV-AWF">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="bsR-vv-cbh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.85653981850000005" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.051538903269999999" green="0.066539555789999996" blue="0.10993968699999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dn5-cJ-SwY" firstAttribute="top" secondItem="MWe-rW-B4O" secondAttribute="topMargin" id="2Fc-6i-ny4"/>
+                            <constraint firstItem="eTX-tV-0we" firstAttribute="leading" secondItem="MWe-rW-B4O" secondAttribute="leadingMargin" constant="-20" id="2MZ-Zp-cVo"/>
+                            <constraint firstItem="5fS-0I-BpO" firstAttribute="top" secondItem="ebC-0f-oSc" secondAttribute="bottom" id="G29-Bi-DTs"/>
+                            <constraint firstItem="eTX-tV-0we" firstAttribute="top" secondItem="vr7-dg-MEv" secondAttribute="bottom" id="IUa-tB-SIJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ebC-0f-oSc" secondAttribute="trailing" constant="-20" id="MGl-af-Ba0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jcc-FV-AWF" secondAttribute="trailing" constant="-20" id="Rch-zV-Zwy"/>
+                            <constraint firstItem="dn5-cJ-SwY" firstAttribute="leading" secondItem="MWe-rW-B4O" secondAttribute="leadingMargin" constant="-20" id="S64-SQ-cah"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eTX-tV-0we" secondAttribute="trailing" constant="-20" id="TCK-xA-o3q"/>
+                            <constraint firstItem="ebC-0f-oSc" firstAttribute="top" secondItem="eTX-tV-0we" secondAttribute="bottom" id="Ut8-GV-tYM"/>
+                            <constraint firstItem="ebC-0f-oSc" firstAttribute="leading" secondItem="MWe-rW-B4O" secondAttribute="leadingMargin" constant="-20" id="Wjl-RK-1vY"/>
+                            <constraint firstItem="vr7-dg-MEv" firstAttribute="trailing" secondItem="ebC-0f-oSc" secondAttribute="trailing" id="Ydh-wF-23n"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dn5-cJ-SwY" secondAttribute="trailing" constant="-20" id="bWu-9r-B6r"/>
+                            <constraint firstItem="vr7-dg-MEv" firstAttribute="top" secondItem="dn5-cJ-SwY" secondAttribute="top" id="dBG-4W-wyI"/>
+                            <constraint firstItem="Jcc-FV-AWF" firstAttribute="leading" secondItem="MWe-rW-B4O" secondAttribute="leadingMargin" constant="-20" id="hQ1-vH-4hV"/>
+                            <constraint firstItem="vr7-dg-MEv" firstAttribute="leading" secondItem="ebC-0f-oSc" secondAttribute="leading" id="ojT-p4-LZq"/>
+                            <constraint firstItem="Jcc-FV-AWF" firstAttribute="top" secondItem="MWe-rW-B4O" secondAttribute="topMargin" id="own-q1-bwA"/>
+                            <constraint firstItem="5fS-0I-BpO" firstAttribute="top" secondItem="dn5-cJ-SwY" secondAttribute="bottom" id="qSq-xH-qNZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dismissTextFieldButton" destination="eTX-tV-0we" id="Fh2-df-dom"/>
+                        <outlet property="locationButton" destination="znS-nU-I5C" id="pYg-H4-Jdc"/>
+                        <outlet property="mainNavigationItem" destination="O9a-jQ-LeD" id="wsQ-nQ-yXZ"/>
+                        <outlet property="map" destination="dn5-cJ-SwY" id="oQo-4c-wrb"/>
+                        <outlet property="mapTypeChooser" destination="Bmr-qC-Yef" id="Hqq-UC-ibf"/>
+                        <outlet property="navigationBar" destination="vr7-dg-MEv" id="bUV-bU-yJi"/>
+                        <outlet property="notConnectedToInternetLabel" destination="Jcc-FV-AWF" id="NRp-aB-dHP"/>
+                        <outlet property="shareButton" destination="QAs-1o-55v" id="xMn-LN-rWr"/>
+                        <outlet property="stopButton" destination="htz-sY-lID" id="wKq-xh-ZBk"/>
+                        <outlet property="textField" destination="EfX-Nt-Nc9" id="2E9-ef-0zH"/>
+                        <outlet property="toolbar" destination="ebC-0f-oSc" id="Hoe-ne-FUy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-155.625" y="152.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="locationIcon.png" width="30" height="30"/>
+    </resources>
+</document>
